@@ -1,0 +1,35 @@
+
+<html lang="ko">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <title>{% block title %}Wordcount{% endblock %}</title>
+            {% load static %}
+            <link rel="stylesheet" href="{ static 'css/style.css' %}">
+    </head>
+    <body class="#fff3e0 orange lighten-5">
+        <div class="container">
+               
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">ABOUT</a>
+            </div>
+        </nav>
+
+        <p> 한글 단어 수 세기도 가능해요! 
+        <br> 그런데 한글 단어를 굳이 셀 이유가 없으니까... 
+        <br> 혹시 글자 수 세기를 하고 싶다면
+        <button type="button"><a href = "http://www.jobkorea.co.kr/service/user/tool/textcount">Click</a></button>  
+        <br> 멋사인들, 아쟈쟈!!!
+        </p>
+
+       
+
+        <a href = "{% url 'home' %}"> HOME</a>
+        </div>
+    </body>
+</html>
